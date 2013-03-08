@@ -1,0 +1,19 @@
+{
+    "name":"loggerApp",
+    "version":"0.1",
+    "manifest_version":2,
+
+    "description":"hie",
+
+    "app":{
+        "background":{
+            "scripts":[
+                "background.js"
+            ]
+        }
+    },
+
+    "permissions":[
+        "serial"
+    ]
+}
