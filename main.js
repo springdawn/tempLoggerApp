@@ -82,7 +82,7 @@ serial.getPorts(function(ports) {
         if(port===device) {
             serial.open(port, function(openInfo) {
                 conId = openInfo.connectionId;
-                setInterval(readData, 2000);
+                if (conId!==-1) setInterval(readData, 2000);
             });
             return;
         }
